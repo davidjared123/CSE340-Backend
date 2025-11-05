@@ -1,6 +1,89 @@
-/******* Change Box Model ***************/
+/* Universal Box Sizing */
 *,
 *:before,
 *:after {
   box-sizing: border-box;
+}
+
+/* Basic Body Styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Site Container */
+.container {
+  width: 100%;
+  padding: 0 20px;
+}
+
+/* Header Styles */
+#top-header {
+  background-color: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#top-header .siteName a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+#tools a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+#tools a:hover {
+  color: #007bff;
+}
+
+/* Navigation Styles */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #007bff;
+}
+
+/* Main Content */
+main {
+  padding: 20px 0;
+}
+
+/* Footer Styles */
+.site-footer {
+  background-color: #fff;
+  border-top: 1px solid #eaeaea;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 40px;
 }
