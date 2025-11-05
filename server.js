@@ -29,11 +29,11 @@ app.set("layout", "./layouts/layout"); // not at views root
 /* ***********************
  * Routes
  *************************/
-app.use("/", staticRoutes);
 // Index Route
 app.get("/", (req, res) => {
   res.render("index", { title: "Home" });
 });
+app.use("/", staticRoutes);
 
 /* ***********************
  * Database Connection Test
